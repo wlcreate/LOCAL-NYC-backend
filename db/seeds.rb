@@ -32,5 +32,4 @@ spot1= Spot.create(name: "Wildair", address: "142 Orchard St, New York, NY 10002
 
 recommendation1 = Recommendation.create(context: "This restaurant offers excellent service and tasty Korean dishes.", user: user1, spot: spot1)
 
-
 puts "meow"
