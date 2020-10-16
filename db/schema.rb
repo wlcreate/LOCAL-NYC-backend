@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_10_16_214950) do
   end
 
   create_table "spots", force: :cascade do |t|
+    t.string "name"
     t.string "address"
     t.string "info"
     t.bigint "neighborhood_id", null: false
