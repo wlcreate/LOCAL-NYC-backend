@@ -18,6 +18,7 @@ Category.reset_pk_sequence
 Neighborhood.reset_pk_sequence
 
 user1 = User.create(first_name: "Bella", last_name: "Evalle", username: "bellaevalle", password: "abc123", bio: "i like to try different food.")
+user2 = User.create(first_name: "Waverley", last_name: "Leung", username: "wavey", password: "abc123", bio: "I like to explore and eat good food.")
 
 category1 = Category.create(name: "Restaurants")
 category2= Category.create(name: "Parks")
