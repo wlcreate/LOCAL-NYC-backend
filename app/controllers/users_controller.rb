@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authorized, only: [:keep_logged_in]
+    before_action :authorized, only: [:keep_logged_in, :update]
 
     def login
         @user = User.find_by(username: params[:username])
@@ -30,8 +30,6 @@ class UsersController < ApplicationController
         end
     end
 
-
-
     def keep_logged_in
         # @user exists here because of the before_action
         wristband_token = encode_token({user_id: @user.id})
@@ -42,13 +40,22 @@ class UsersController < ApplicationController
         }
     end
 
+    def update
+        wristband_token = encode_token({user_id: @user.id})
+        @user.update(user_params)
+
+        render json: {
+            user: UserSerializer.new(@user), 
+            token: wristband_token
+        }
+    end
 
     private
 
     def user_params
         # params = {username: "", password: "", user: {username: ""}}
         # Don't use `require` here
-        params.permit(:first_name, :last_name, :username, :password)
+        params.permit(:first_name, :last_name, :username, :password, :bio)
     end
 
 end
