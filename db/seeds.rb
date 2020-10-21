@@ -135,13 +135,12 @@ spot37= Spot.create(name: "Dudley’s", address: "85 Orchard St, New York, NY 10
 spot38= Spot.create(name: "Dirt Candy", address: "86 Allen St, New York, NY 10002", info: "Vegetarian /n (212) 228-7732 /n 12:00PM - 09:00PM", category: category10, neighborhood: neighborhood13)
 spot39= Spot.create(name: "Pig and Khao", address: "68 Clinton St, New York, NY 10002", info: "Southeast Asian Restaurant /n (212) 920-4485 /n 04:00PM - 09:00PM", category: category10, neighborhood: neighborhood13)
 ## Manhattan (Midtown #14)
-spot40= Spot.create(name: "Bryant Park", address: "New York, NY 10018", info: "Park /n
-(212) 768-4242 /n 07:00AM - 09:00PM", category: category8, neighborhood: neighborhood14)
+spot40= Spot.create(name: "Bryant Park", address: "New York, NY 10018", info: "Park /n (212) 768-4242 /n 07:00AM - 09:00PM", category: category8, neighborhood: neighborhood14)
 spot41= Spot.create(name: "Top of The Rock", address: "30 Rockefeller Plaza, New York, NY 10112", info: "Observation deck /n (212) 698-2000 /n 01:00PM - 09:00PM
 ", category: category7, neighborhood: neighborhood14)
 spot42= Spot.create(name: "Marea", address: "240 Central Park S, New York, NY 10019", info: "Restaurant /n (212) 582-5100 /n 04:00PM - 09:00PM", category: category10, neighborhood: neighborhood14)
 ## Manhattan (SoHo #15)
-spot43= Spot.create(name: "Balthazar", adress: "80 Spring St, New York, NY 10012", info: "French /n (212) 965-1414 /n 7:30AM–11:30AM, 12PM–12AM",  category: category10, neighborhood: neighborhood15)
+spot43= Spot.create(name: "Balthazar", address: "80 Spring St, New York, NY 10012", info: "French /n (212) 965-1414 /n 7:30AM–11:30AM, 12PM–12AM",  category: category10, neighborhood: neighborhood15)
 spot44= Spot.create(name: "Blue Ribbon Sushi", address: "119 Sullivan St, New York, NY 10012", info: "Sushi /n (212) 343-0404 /n 04:00PM - 10:00PM", category: category10, neighborhood: neighborhood15)
 spot45= Spot.create(name: "Boqueria", address: "171 Spring St, New York, NY 10012", info: "Tapas /n (212) 343-4255 /n 12:00PM - 10:00PM", category: category10, neighborhood: neighborhood15)
 
