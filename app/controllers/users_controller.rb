@@ -40,6 +40,7 @@ class UsersController < ApplicationController
         }
     end
 
+    # ! Where we stopped to update/edit a user's info
     def update
         wristband_token = encode_token({user_id: @user.id})
         @user.update(user_params)

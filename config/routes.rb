@@ -12,5 +12,12 @@ Rails.application.routes.draw do
   patch "/users/:user_id", to: "users#update" #updates a user's info
   get "/users/:user_id/recommendations", to: "recommendations#index" #all of a user's recommendations
 
+  ##### Neighborhood
+  get "/neighborhoods", to: "neighborhoods#index" #all the neighborhoods
+
+  get "/neighborhoods/:neighborhood_id/spots", to: "spots#index"
+
+  ##### Spot
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
