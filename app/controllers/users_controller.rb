@@ -40,8 +40,8 @@ class UsersController < ApplicationController
         }
     end
 
-    # ! Where we stopped to update/edit a user's info
     def update
+        # byebug
         wristband_token = encode_token({user_id: @user.id})
         @user.update(user_params)
 
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
     def user_params
         # params = {username: "", password: "", user: {username: ""}}
         # Don't use `require` here
-        params.permit(:first_name, :last_name, :username, :password, :bio)
+        params.permit(:first_name, :last_name, :username, :password, :bio, :password)
     end
 
 end

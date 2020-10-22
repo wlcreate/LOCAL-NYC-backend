@@ -15,12 +15,15 @@ Rails.application.routes.draw do
   ##### Neighborhood
   get "/neighborhoods", to: "neighborhoods#index" #all the neighborhoods
 
-  get "/neighborhoods/:neighborhood_id/spots", to: "spots#index" #all of the spots
-
   ##### Spot
+  get "/neighborhoods/:neighborhood_id/spots", to: "spots#index" #all of the spots
   get "/neighborhoods/:neighborhood_id/spots/:spot_id", to: "spots#show" #specific spot info
-  get "/neighborhoods/:neighborhood_id/spots/:spot_id/recommendations", to: "recommendations#index" #recommendations of a spot
+  post "neighborhoods/:neighborhood_id/spots", to: "spots#create" #creates a new spot
 
+  ###### Recommendation
+  get "/neighborhoods/:neighborhood_id/spots/:spot_id/recommendations", to: "recommendations#spot_index" #recommendations of a spot
+  post "/neighborhoods/:neighborhood_id/spots/:spot_id/recommendations", to: "recommendations#create" # creates a new recommendation
+  delete "/neighborhoods/:neighborhood_id/spots/:spot_id/recommendations/:recommendation_id", to: "recommendations#destroy" #deletes a recommendation
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
