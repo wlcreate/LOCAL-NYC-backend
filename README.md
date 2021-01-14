@@ -1,5 +1,5 @@
 # LOCAL NYC Backend
-This is the Ruby on Rails API for LOCAL NYC. LOCAL NYC is a web application that allows locals from NYC to share and explore other users' favorite spots in NYC. Spots are based on the five boroughs, and shown based on their neighborhood and category. Users can add what they recommend about the spot as well as add a spot if they don't see one listed. 
+This is the Ruby on Rails API for LOCAL NYC. LOCAL NYC is a web application that allows locals from NYC to share and explore other users' favorite spots in NYC. Spots are based on the five boroughs and shown based on their neighborhood. Users can then search by name and filter by category. In addition, users can add what they recommend about the spot, as well as add a spot if they don't see one listed. 
 
 [Link to frontend](https://github.com/wlcreate/LOCAL-NYC)
 
